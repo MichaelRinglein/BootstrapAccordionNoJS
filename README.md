@@ -11,4 +11,6 @@ First I deleted all bootrap data toggle from the HTML tags (aria-labelledby, dat
 
 Second I changed and added the id's in the Card buttons and Card bodies.
 
-Third I added the onclick="togglePanel(this)" to each button. The togglePanel(this) function loops through all available Panels and switches all of but the selected.
+Third I added the onclick="togglePanel(this)" to each button. 
+
+The togglePanel(this) function loops through all available Panels and switches all off but the selected by simply adding or deleting Bootraps own "show" class.
