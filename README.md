@@ -1,6 +1,8 @@
 # BootstrapAccordionNoJS
 The Bootstrap Accordion with the collapse functionality but without the Bootstrap.js or jQuery.js (or other external JS libraries)
 
+[Life example](https://dev.strawanzer.online/bootstrap/accordion.html)
+
 ## Why this project?
 The accordion is part of a series of animation I make for a client. Those animations are loaded into already existing websites.
 
