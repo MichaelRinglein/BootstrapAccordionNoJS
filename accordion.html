@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<h2>Bootstrap Accordion without Bootstrap.js and jQuery</h2>
+&nbsp;
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" id="cardOne" onclick="togglePanel(this)">
+          Collapsible Group Item #1
+        </button>
+      </h2>
+    </div>
+    <div id="cardOnePanel" class="collapse show">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" id="cardTwo" onclick="togglePanel(this)">
+          Collapsible Group Item #2
+        </button>
+      </h2>
+    </div>
+    <div id="cardTwoPanel" class="collapse">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" id="cardThree" onclick="togglePanel(this)">
+          Collapsible Group Item #3
+        </button>
+      </h2>
+    </div>
+    <div id="cardThreePanel" class="collapse">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+&nbsp;
+<p>Made by <a href="https://michaelringlein.com/" target="_blank">Michael Ringlein</a>.
+
+<script>
+var allPanels = document.getElementsByClassName('collapse');
+
+function togglePanel(tab) {
+	var selectedPanel = tab.id + 'Panel';	
+
+	for (var i = 0; i < allPanels.length; i++) {
+		if(selectedPanel === allPanels[i].id){
+			allPanels[i].classList.add('show');
+		} else {
+			allPanels[i].classList.remove('show');			
+		}	
+	}
+}
+</script>
+
+</body>
+</html>
